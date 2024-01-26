@@ -1,11 +1,4 @@
-@font-face {
-  font-family: ToronoGlitchSans H4;
-  src: local("ToronoGlitchSans H4"), url(./font/torono-glitch-sans/Torono_Glitch_SansH4.otf);
-}
-@font-face {
-  font-family: ToronoGlitchSans H2;
-  src: local("ToronoGlitchSans H4"), url(./font/torono-glitch-sans/Torono\ Glitch\ SansH2.otf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 h1 {
   font-size: 2rem;
   text-align: center;
@@ -109,24 +102,20 @@ div.card section.right button:hover {
   }
   div.card section.left {
     order: 2;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   div.card section.left div.img_container {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 100%;
   }
   div.card section.left div.img_container img {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 60vh;
   }
   section.right {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 0;

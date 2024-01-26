@@ -1,6 +1,7 @@
 import React from "react";
 import "./style/style.css";
 import "./style/app.css";
+import photoImg from "./image/Photos.png";
 const App = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const App = () => {
           <section class="left">
             <div class="img_container">
               <img
-                src={require("./image/Photos.png")}
+                src={photoImg}
                 title="歷屆資工營照片"
                 alt="Photo Wall"
               />
