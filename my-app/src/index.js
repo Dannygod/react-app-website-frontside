@@ -1,9 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import Test from "./Test";
-ReactDOM.render(
-  <React.StrictMode>
-    <Test />
-  </React.StrictMode>,
-  document.querySelector("#root")
-);
+const root = document.querySelector("#root");
+ReactDOM.createRoot(root).render(<Test />);
+
