@@ -1,13 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Nav from "./Nav";
-import App from "./App";
-import Footer from "./Footer";
+import Test from "./Test";
 ReactDOM.render(
   <React.StrictMode>
-    <Nav />
-    <App />
-    <Footer />
+    <Test />
   </React.StrictMode>,
   document.querySelector("#root")
 );
