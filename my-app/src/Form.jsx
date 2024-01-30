@@ -7,7 +7,7 @@ const Form = ({ count, setCount }) => {
     }
     return (
         <form>
-            <button onClick={buttonHandler}>Click {count} times</button>
+            <button className="click" onClick={buttonHandler}>Click {count} times</button>
         </form>
     )
 }
