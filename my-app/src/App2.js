@@ -2,7 +2,7 @@ import React from "react";
 import "./style/style.css";
 import "./style/app.css";
 import photoImg from "./image/Photos.png";
-const App = () => {
+const App2 = () => {
   return (
     <div>
       <main>
@@ -41,4 +41,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App2;
