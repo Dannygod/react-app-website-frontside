@@ -1,14 +1,14 @@
 import React from "react"
 
-const Form = ({ count, buttonHandler }) => {
-
+const Form = ({ count, setCount }) => {
+    const buttonHandler = (e) => {
+        e.preventDefault()
+        setCount(count + 1)
+    }
     return (
-        <>
-            <form>
-                <input type="text" name="name" id="name" />
-                <button onClick={buttonHandler}>Click {count} times</button>
-            </form>
-        </>
+        <form>
+            <button onClick={buttonHandler}>Click {count} times</button>
+        </form>
     )
 }
 
