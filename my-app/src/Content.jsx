@@ -1,10 +1,10 @@
 import React from 'react';
-
-const Content = ({ message }) => {
+import Message from './Message';
+const Content = ({ message, setMessage }) => {
     return (
         <div>
-            {message.map((mes) => {
-                return <p>{mes}</p>
+            {message.map((message) => {
+                return <Message message={message} setMessage={setMessage} key={message.id} />
             })}
         </div>
     )

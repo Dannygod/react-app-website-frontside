@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { v4 as uuidv4 } from 'uuid';
 const Form2 = ({ message, setMessage }) => {
     const [input, setInput] = useState("");
     const inputHandler = (e) => {
@@ -10,7 +10,7 @@ const Form2 = ({ message, setMessage }) => {
         if (input === "") {
             return;
         }
-        setMessage(prevMessages => [...prevMessages, input]);
+        setMessage(prevMessages => [...prevMessages, { content: input, id: uuidv4() }]);
         setInput("");
         console.log(message);
     }

@@ -18,7 +18,7 @@ const Test = () => {
             </div>
             <Form count={count} setCount={setCount} />
             <Form2 message={message} setMessage={setMessage} />
-            <Content message={message} />
+            <Content message={message} setMessage={setMessage} />
         </>
     );
 };
