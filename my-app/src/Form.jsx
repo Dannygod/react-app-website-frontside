@@ -1,16 +1,12 @@
-import React from 'react'
+import React from "react"
 
-const Form = () => {
-    const sumitHandler = (e) => {
-        console.log(e.target);
-        e.preventDefault();
-        console.log(e.target.parent);
-    };
+const Form = ({ count, buttonHandler }) => {
+
     return (
         <>
             <form>
-                <input type="text" name="name" id="name" onChange={sumitHandler} />
-                <button onClick={sumitHandler}>Submit</button>
+                <input type="text" name="name" id="name" />
+                <button onClick={buttonHandler}>Click {count} times</button>
             </form>
         </>
     )
