@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "./Components/Button"
+import { TomatoButton } from "./Components/Button"
 const Form = ({ count, setCount }) => {
     const buttonHandler = (e) => {
         e.preventDefault()
@@ -7,7 +7,7 @@ const Form = ({ count, setCount }) => {
     }
     return (
         <form>
-            <Button className="click" onClick={buttonHandler}>Click {count} times</Button>
+            <TomatoButton className="click" onClick={buttonHandler}>Click {count} times</TomatoButton>
         </form>
     )
 }

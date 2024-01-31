@@ -10,5 +10,9 @@ const Button = styled.button`
   border: 2px solid #BF4F74;
   border-radius: 5px;
 `;
-
-export default Button
+const TomatoButton = styled(Button)`
+  color: tomato;
+  border-color: tomato;
+`;
+export default Button;
+export { TomatoButton };
