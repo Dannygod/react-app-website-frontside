@@ -1,5 +1,5 @@
 import React from "react"
-
+import Button from "./Components/Button"
 const Form = ({ count, setCount }) => {
     const buttonHandler = (e) => {
         e.preventDefault()
@@ -7,7 +7,7 @@ const Form = ({ count, setCount }) => {
     }
     return (
         <form>
-            <button className="click" onClick={buttonHandler}>Click {count} times</button>
+            <Button className="click" onClick={buttonHandler}>Click {count} times</Button>
         </form>
     )
 }

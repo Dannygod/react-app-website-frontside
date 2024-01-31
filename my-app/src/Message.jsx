@@ -1,6 +1,7 @@
 import React from 'react'
 import "./style/style.css"
-const Message = ({content, message, setMessage, mesID }) => {
+import Button from './Components/Button'
+const Message = ({ content, message, setMessage, mesID }) => {
     const deleteHandler = () => {
         console.log(mesID);
         setMessage(message.filter(mes => mesID !== mes.id))
@@ -8,7 +9,7 @@ const Message = ({content, message, setMessage, mesID }) => {
     return (
         <div className="content">
             <h4>{content}</h4>
-            <button onClick={deleteHandler}>Delete</button>
+            <Button $primary onClick={deleteHandler}>Delete</Button>
         </div>
     )
 }

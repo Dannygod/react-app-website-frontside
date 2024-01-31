@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import Button from './Components/Button';
 const Form2 = ({ message, setMessage }) => {
     const [input, setInput] = useState("");
     const inputHandler = (e) => {
@@ -17,7 +18,7 @@ const Form2 = ({ message, setMessage }) => {
     return (
         <form>
             <input type="text" onChange={inputHandler} value={input} />
-            <button onClick={sumitHandler}>Sumit</button>
+            <Button onClick={sumitHandler}>Sumit</Button>
         </form>
     )
 }
